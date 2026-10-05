@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Einsendeaufgabe 1</title>
+
+    <link rel="stylesheet" href="einsendeaufgabe_1.css">
+</head>
+
+<body>
+    <main>
+        <h1>Einsendeaufgabe 1</h1>
+        <p class="description">
+            Drehe die Scheibe mit den Tasten <strong>L</strong> und
+            <strong>R</strong> oder starte die automatische Animation
+            mit <strong>A</strong>.
+        </p>
+
+        <section class="animation-section">
+            <h2>Rotierende Scheibe</h2>
+            <div class="animation-container">
+                <img
+                    id="disc"
+                    src="images/disc_1.png"
+                    alt="Scheibe in Rotationsposition 0 Grad"
+                >
+
+            </div>
+            <div class="controls">
+                <button id="leftButton">
+                    ◀ Links
+                </button>
+                <button id="rightButton">
+                    Rechts ▶
+                </button>
+                <button id="animationButton">
+                    ▶ Animation starten
+                </button>
+            </div>
+
+            <div class="status">
+                <p>
+                    <strong>Rotationswinkel:</strong>
+                    <span id="angle">0°</span>
+                </p>
+                <p>
+                    <strong>Status:</strong>
+                    <span id="status">Animation pausiert</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="animation-section">
+            <h2>Hüpfender Ball</h2>
+            <div class="ball-container">
+                <img
+                    id="ball"
+                    src="images/ball_1.png"
+                    alt="Animierter hüpfender Ball"
+                >
+            </div>
+            <p class="ball-description">
+                Das zweite Objekt wird automatisch animiert.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="einsendeaufgabe_1.js"></script>
+
+</body>
+
+<footer class="footer">
+    <h3>Bildquellen</h3>
+    <p>
+        Scheibe:
+        <a
+            href="https://www.pngwing.com/en/free-png-nlsmf"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            PNGWing
+        </a>
+    </p>
+    <p>
+        Ball:
+        <a
+            href="https://toppng.com/show_download/56076/inflatable-beach-ball"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            TOPpng
+        </a>
+    </p>
+
+</footer>
+
+</html>
